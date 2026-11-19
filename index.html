@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <!-- Nur eigene Dateien; Verbindungen nur zu Supabase (und für Tests zum eigenen Rechner). Kein Inline-Skript, keine fremden Schriften. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://*.supabase.co http://127.0.0.1:* http://localhost:*; img-src 'self' data:; base-uri 'none'; form-action 'none'"
+    />
+    <title>Angebot ansehen und bestätigen</title>
+    <link rel="stylesheet" href="seite.css" />
+  </head>
+  <body>
+    <main id="inhalt" class="seite" aria-live="polite">
+      <p class="laden">Das Angebot wird geladen …</p>
+      <noscript>
+        <p class="hinweis fehler">
+          Diese Seite braucht JavaScript, um das Angebot anzuzeigen. Bitte schalten Sie es in Ihrem
+          Browser ein.
+        </p>
+      </noscript>
+    </main>
+    <footer id="fuss" class="seite fuss"></footer>
+    <script src="config.js"></script>
+    <script src="seite.js"></script>
+  </body>
+</html>
